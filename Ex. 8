@@ -1,0 +1,101 @@
+programa {
+  funcao inicio() {
+
+
+      logico condicao
+      real produto, desconto, juros
+      inteiro  forma, parcela
+
+
+    escreva ("Insira o valor do produto: ")
+    leia (produto)
+
+
+    escreva ("Selecione um número para definir o tipo de pagamento: \n")
+    escreva ("1 - À vista no Pix \n")
+    escreva ("2 - À vista no Cartão de Crédito \n")
+    escreva ("3 - Parcelado no Cartão de Crédito\n ")
+    escreva ("Tipo de pagamento escolhido:  \n")
+    leia(forma)
+
+
+    //pix
+      se (forma==1) {
+        desconto = produto-(produto*10/100)
+        escreva ("O valor da compra será de: ", desconto , "\n")
+        escreva ("Deseja efetuar o pagamento? \n")
+        escreva ("Sim \n")
+        escreva ("Não \n")
+        leia (condicao)
+
+
+        se (condicao==verdadeiro) {
+          escreva ("Sua compra foi efetivada com sucesso!")
+        }
+        se (condicao==falso) {
+          escreva ("Sua compra foi cancelada!")
+      }}
+
+
+      //À vista no cred.
+      se (forma==2) {
+        desconto = produto-(produto*5/100)
+        escreva ("O valor da compra será de: ", desconto , "\n")
+        escreva ("Deseja efetuar o pagamento? \n")
+        escreva ("Sim \n")
+        escreva ("Não \n")
+        leia (condicao)
+
+
+        se (condicao==verdadeiro) {
+          escreva ("Sua compra foi efetivada com sucesso!")
+        }
+        se (condicao==falso) {
+          escreva ("Sua compra foi cancelada!")
+      }
+      }
+     //parcela
+      se (forma== 3) {
+        escreva ("Selecione um número para definir o tipo de parcela: \n")
+        escreva ("4 - Parcelado em duas vezes \n")
+        escreva ("5 - Parcelado em três vezes \n")
+        escreva ("Opção de escolha: ")
+        leia (parcela)
+
+
+        se (parcela == 4) {
+          escreva ("o valor da compra será de: ", produto , "\n")
+          escreva ("Deseja efetuar o pagamento? \n")
+          escreva ("Sim \n")
+          escreva ("Não \n")
+          leia (condicao)
+
+
+          se (condicao==verdadeiro) {
+          escreva ("Sua compra foi efetivada com sucesso!")
+          }
+          se (condicao==falso) {
+           escreva ("Sua compra foi cancelada!")
+          }
+        }}
+
+
+        se (parcela == 5) {
+          juros = produto+(produto*5/100)
+          escreva ("O valor da compra será de: ", juros , "\n")
+          escreva ("Deseja efetuar o pagamento? \n")
+          escreva ("Sim \n")
+          escreva ("Não \n")
+          leia (condicao)
+
+
+        se (condicao==verdadeiro) {
+          escreva ("Sua compra foi efetivada com sucesso!")
+        }
+        se (condicao==falso) {
+          escreva ("Sua compra foi cancelada!")
+      }}
+    }
+}
+
+
