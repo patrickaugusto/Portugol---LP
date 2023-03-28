@@ -1,0 +1,19 @@
+programa
+{
+  funcao inicio ()
+  {
+    logico a1, b1
+    inteiro a, b
+   
+    escreva ("Atribua um valor para A: ")
+    leia (a)
+    escreva ("Atribua um valor para B: ")
+    leia(b)
+   
+    a1 = (a>0)
+    escreva ("A é maior que 0? ", a1 , "\n")
+    b1 = (b>0)
+    escreva ("B é maior que 0? ", b1)
+   
+  }
+}
