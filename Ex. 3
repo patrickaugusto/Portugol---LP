@@ -1,0 +1,27 @@
+programa
+{
+  funcao inicio ()
+  {
+   
+    inteiro a, b, c, resultado //declarando variáveis
+   
+    //atribuindo valores às variáveis
+    escreva ("Digite um valor para A: ")
+    leia (a)
+        escreva ("Digite um valor para B: ")
+    leia (b)
+   
+    //sistema de condição
+    se (a == b) {
+      resultado = a + b
+    }
+    senao {
+      resultado = a * b
+    }
+   
+    //declarando o valor de "c" e informando na tela
+    c = resultado
+   
+    escreva ("O valor de C é: ", c)
+  }
+}
