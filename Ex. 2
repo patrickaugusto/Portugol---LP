@@ -1,0 +1,29 @@
+programa
+{
+  funcao inicio ()
+  {
+   
+    real a, b, c, soma //declarar variáveis
+
+    //atribuir valor às variáveis
+    escreva ("Digite um valor para A: ")
+    leia (a)
+        escreva ("Digite um valor para B: ")
+    leia (b)
+        escreva ("Digite um valor para C: ")
+    leia (c)
+   
+    soma = a + b
+   
+    //sistema de condição
+    se (soma > c) {
+      escreva("A soma entre A e B é maior que C")
+    }
+    se (soma == c) {
+      escreva ("A soma entre A e B é igual a C")
+    }
+    se (soma > c) {
+      escreva ("A soma entre A e B é menor que C")
+    }
+  }
+}
