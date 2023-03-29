@@ -1,16 +1,16 @@
 programa {
   funcao inicio() {
 
-
+      //declarar variáveis
       logico condicao
       real produto, desconto, juros
       inteiro  forma, parcela
 
-
+    //informar valor
     escreva ("Insira o valor do produto: ")
     leia (produto)
 
-
+    //escolher forma de pagamento
     escreva ("Selecione um número para definir o tipo de pagamento: \n")
     escreva ("1 - À vista no Pix \n")
     escreva ("2 - À vista no Cartão de Crédito \n")
@@ -52,8 +52,8 @@ programa {
         }
         se (condicao==falso) {
           escreva ("Sua compra foi cancelada!")
-      }
-      }
+      }}
+    
      //parcela
       se (forma== 3) {
         escreva ("Selecione um número para definir o tipo de parcela: \n")
@@ -77,7 +77,7 @@ programa {
           se (condicao==falso) {
            escreva ("Sua compra foi cancelada!")
           }
-        }}
+        }
 
 
         se (parcela == 5) {
@@ -94,7 +94,7 @@ programa {
         }
         se (condicao==falso) {
           escreva ("Sua compra foi cancelada!")
-      }}
+      }}}
     }
 }
 
