@@ -95,6 +95,9 @@ programa {
         se (condicao==falso) {
           escreva ("Sua compra foi cancelada!")
       }}}
+    senao {
+        escreva("Sua compra foi cancelada!")
+    }
     }
 }
 
