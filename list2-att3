@@ -1,0 +1,63 @@
+programa {
+  inclua biblioteca Matematica --> mat
+  funcao inicio() {
+  inteiro n1, n2, soma, resultado
+
+  escreva("Escreva o primeiro número: ")
+  leia(n1)
+  escreva("Escreva o segundo número: ")
+  leia(n2)    
+
+  escreva("Selecione a operação lógica a ser feita:\n")
+  escreva("10-Soma\n")
+  escreva("11-Subtração\n")
+  escreva("12-Multiplicação\n")
+  escreva("13-Divisão\n")
+  escreva("14-Resto de Divisão\n")
+  escreva("15-Primeiro Número Elevado ao Segundo\n")
+  escreva("16-Raiz Quadrada do Segundo Número\n")
+  leia(resultado)
+
+  se (resultado==10){
+    soma=a+b
+    escreva(soma)
+  }
+  
+  se (resultado==11){
+    soma=a-b
+    escreva(soma)
+  }
+  
+  se (resultado==12){
+    soma=a*b
+    escreva(soma)
+  }
+  
+  se (resultado==13){
+    soma=a/b
+    escreva(soma)
+  }
+  
+  se (resultado==14){
+    soma=a%b
+    escreva(soma)
+  }
+  
+  se (resultado==15){
+    soma=mat.potencia(a,b)
+    escreva(soma)
+  }
+  
+  se (resultado==16){
+    soma=mat.raiz(b,2)
+    escreva(soma)
+  }
+  
+  
+  
+  
+  
+  
+  
+  }
+}
