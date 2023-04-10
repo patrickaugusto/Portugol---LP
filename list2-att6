@@ -1,0 +1,39 @@
+programa {
+  funcao inicio() {
+    inteiro l, op
+    real gasolina=4.02, etanol=3.24 , d
+    
+    escreva("Fala meu fela! Se liga, a gasosa ta por: R$",gasolina," e o etanol ta por: R$",etanol,". Diz ai, qual bagulho tu vai querer?\n")
+    escreva("1-Gasolina\n")
+    escreva("2-Etanol\n")
+    leia(op)
+
+    se (op==1){
+      escreva("Quantos litros? \n")
+      leia(l)
+      se (l<=20) {
+      d = g-(g*4/100)
+      escreva("O valor a ser pago sera de: ", g)
+      }
+      se senao(l>20) {
+      d = g-(g*6/100)
+      escreva("O valor a ser pago sera de: ", g)
+      }
+    }
+
+    se (op==2){
+      escreva("Quantos litros?")
+      leia(l)
+      se (l<=20) {
+      d= e-(e*3/100)
+      escreva("O valor a ser pago sera de: ", e)
+      }
+      se senao(l>20) {
+      d= e-(e*5/100)
+      escreva("O valor a ser pago sera de: ", e)
+      }
+    }
+
+    
+  }
+}
