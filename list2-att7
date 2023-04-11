@@ -1,0 +1,34 @@
+programa {
+  funcao inicio() {
+    
+    cadeia p1
+    inteiro q
+    real valor, total, tp
+
+    escreva("Insira o Nome do Produto: ")
+    leia(p1)
+    escreva("Insira a Quantidade: ")
+    leia(q)
+    escreva("Insira o Valor do Produto: ")
+    leia(valor)
+
+    total = (valor*q)
+
+    se (q<=5) {
+      tp = (total-(total*2/100))
+      escreva("O total a pagara é de: R$", tp)
+    } 
+
+    se (q>5) {
+      tp = (total-(total*3/100))
+      escreva("O total a pagara é de: R$", tp)
+    } 
+
+    se (q>10) {
+      tp = (total-(total*5/100))
+      escreva("O total a pagara é de: R$", tp)
+    } 
+
+
+  }
+}
