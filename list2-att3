@@ -1,7 +1,8 @@
 programa {
   inclua biblioteca Matematica --> mat
   funcao inicio() {
-  inteiro n1, n2, soma, resultado
+  real n1,n2,soma
+  cadeia resultado
 
   escreva("Escreva o primeiro número: ")
   leia(n1)
@@ -9,54 +10,49 @@ programa {
   leia(n2)    
 
   escreva("Selecione a operação lógica a ser feita:\n")
-  escreva("10-Soma\n")
-  escreva("11-Subtração\n")
-  escreva("12-Multiplicação\n")
-  escreva("13-Divisão\n")
-  escreva("14-Resto de Divisão\n")
-  escreva("15-Primeiro Número Elevado ao Segundo\n")
-  escreva("16-Raiz Quadrada do Segundo Número\n")
+  escreva("a-Soma\n")
+  escreva("b-Subtração\n")
+  escreva("c-Multiplicação\n")
+  escreva("d-Divisão\n")
+  escreva("e-Resto de Divisão\n")
+  escreva("f-Primeiro Número Elevado ao Segundo\n")
+  escreva("g-Raiz Quadrada do Segundo Número\n")
   leia(resultado)
 
-  se (resultado==10){
-    soma=a+b
+  se (resultado=="a"){
+    soma=n1+n2
     escreva(soma)
   }
   
-  se (resultado==11){
-    soma=a-b
+  se senao (resultado=="b"){
+    soma=n1-n2
     escreva(soma)
   }
   
-  se (resultado==12){
+  se senao (resultado=="c"){
     soma=a*b
     escreva(soma)
   }
   
-  se (resultado==13){
-    soma=a/b
+  se senao(resultado=="d"){
+    soma=n1/n2
     escreva(soma)
   }
   
-  se (resultado==14){
-    soma=a%b
+  se senao(resultado=="e"){
+    soma=n1%n2
     escreva(soma)
   }
   
-  se (resultado==15){
-    soma=mat.potencia(a,b)
+  se senao(resultado=="f"){
+    soma=mat.potencia(n1,n2)
     escreva(soma)
   }
   
-  se (resultado==16){
-    soma=mat.raiz(b,2)
+  se senao(resultado=="g"){
+    soma=mat.raiz(n2,2)
     escreva(soma)
   }
-  
-  
-  
-  
-  
   
   
   }
