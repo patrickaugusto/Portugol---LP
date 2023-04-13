@@ -10,8 +10,8 @@ programa {
     leia(c)
 
     se (a<(b+c)){
-      se (b<(c+a)) {
-        se (c<(a+b)){
+      se senao(b<(c+a)) {
+        se senao(c<(a+b)){
           escreva("É um triângulo")
         }
       }
