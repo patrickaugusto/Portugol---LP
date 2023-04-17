@@ -13,17 +13,14 @@ programa {
       se (delta<0) {
         escreva("A equação não possui raiz.")
       }
-      se (delta==0){
+      se senao(delta==0){
       x1 = (-b+mat.raiz(delta,2)/(2*a))
       escreva (x1)
       }
-      se (delta>0){
+      se senao(delta>0){
         x1 = (-b+mat.raiz(delta,2)/(2*a))
         x2 = (-b-mat.raiz(delta,2)/(2*a))
-        escreva ("Os valores das raizes são:" x1, x2)
+        escreva ("Os valores das raizes são:", x1, " e ", x2)
       }
-
-
-
   }
 }
