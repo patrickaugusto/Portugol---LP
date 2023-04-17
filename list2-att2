@@ -14,12 +14,12 @@ programa {
         escreva("A equação não possui raiz.")
       }
       se senao(delta==0){
-      x1 = (-b+mat.raiz(delta,2)/(2*a))
+      x1 = (-1*b+mat.raiz(delta,2)/(2*a))
       escreva ("O valor da raiz é: ",x1)
       }
       se senao(delta>0){
-        x1 = ((-b+(mat.raiz(delta,2)))/(2*a))
-        x2 = ((-b-(mat.raiz(delta,2)))/(2*a))
+        x1 = ((-1*b+(mat.raiz(delta,2)))/(2*a))
+        x2 = ((-1*b-(mat.raiz(delta,2)))/(2*a))
         escreva ("O valor da primeira raiz é:", x1,"\n")
         escreva ("O valor da segunda raiz é:", x2)
       }
