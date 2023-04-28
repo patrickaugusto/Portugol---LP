@@ -1,63 +1,70 @@
 programa {
     inclua biblioteca Matematica --> mat
 	funcao inicio() {
-		real a, b, c
+		real a, b, c, loop = 1
 		real cubo, paralel, esfera, cilindro, raiz
 		cadeia op
 		
-		escreva ("Cubo \n")
-		escreva ("Paralelepípedo \n")
-		escreva ("Esfera \n")
-		escreva ("Cilindro \n")
-		escreva ("Raiz \n")
-		escreva ("Escolha uma das opções acima: ")
-		leia(op)
 		
-		se (op=="cubo" ou op=="Cubo"){
-            escreva ("Digite o valor da Arestra: ")
-            leia (a)
-		    cubo = vcubo(a)
-		    escreva("Resultado = ", cubo)
-			}
-			
-		se (op=="Paralelepípedo" ou op=="paralelepípedo" ou op=="Paralelepipedo" ou op=="paralelepipedo")	{
-	         escreva ("Digite o valor da Largura: ")
-            leia (a)
-            escreva ("Digite o valor da Altura: ")
-            leia (b)
-            escreva ("Digite o valor da Comprimento: ")
-            leia (c)
-		    paralel = vparalel(a, b, c)
-		    escreva("Resultado = ", paralel)
-		}
-		
-		se (op=="Esfera" ou op=="esfera"){
-		    escreva ("digite o valor do raio: ")
-		    leia (a)
-		    esfera = vesfera(a)
-		    escreva ("Resultado = ", esfera)
-		}
-		
-		se (op=="cilindro" ou op=="Cilindro"){
-		    escreva("Digite o raio do cilindro: ")
-		    leia(a)
-		    escreva("Digite o calor da altura do cilindro: ")
-		    leia(b)
-		    cilindro = vcilindro(a, b)
-		    escreva ("Resultado = ", cilindro)
-		}
+		enquanto (loop==1) {
 		    
-		// calcular a raiz quadrada de um determinado número passado por parâmetro
-		se (op=="Raiz" ou op=="raiz"){
-		    escreva ("Digite o valor do radicando: ")
-		    leia (a)
-		    escreva ("Digite o valor do indice do radical: ")
-		    leia (b)
-		    raiz = vraiz(a,b)
-            escreva ("Resultado = ", raiz)
-		}
-
-		    
+		
+    		escreva ("Cubo \n")
+    		escreva ("Paralelepípedo \n")
+    		escreva ("Esfera \n")
+    		escreva ("Cilindro \n")
+    		escreva ("Raiz \n")
+    		escreva ("Escolha uma das opções acima: ")
+    		leia(op)
+    		
+    		se (op=="cubo" ou op=="Cubo"){
+                escreva ("Digite o valor da Arestra: ")
+                leia (a)
+    		    cubo = vcubo(a)
+    		    escreva("Resultado = ", cubo)
+    			}
+    			
+    		se (op=="Paralelepípedo" ou op=="paralelepípedo" ou op=="Paralelepipedo" ou op=="paralelepipedo")	{
+    	         escreva ("Digite o valor da Largura: ")
+                leia (a)
+                escreva ("Digite o valor da Altura: ")
+                leia (b)
+                escreva ("Digite o valor da Comprimento: ")
+                leia (c)
+    		    paralel = vparalel(a, b, c)
+    		    escreva("Resultado = ", paralel)
+    		}
+    		
+    		se (op=="Esfera" ou op=="esfera"){
+    		    escreva ("digite o valor do raio: ")
+    		    leia (a)
+    		    esfera = vesfera(a)
+    		    escreva ("Resultado = ", esfera)
+    		}
+    		
+    		se (op=="cilindro" ou op=="Cilindro"){
+    		    escreva("Digite o raio do cilindro: ")
+    		    leia(a)
+    		    escreva("Digite o calor da altura do cilindro: ")
+    		    leia(b)
+    		    cilindro = vcilindro(a, b)
+    		    escreva ("Resultado = ", cilindro)
+    		}
+    		    
+    		// calcular a raiz quadrada de um determinado número passado por parâmetro
+    		se (op=="Raiz" ou op=="raiz"){
+    		    escreva ("Digite o valor do radicando: ")
+    		    leia (a)
+    		    escreva ("Digite o valor do indice do radical: ")
+    		    leia (b)
+    		    raiz = vraiz(a,b)
+                escreva ("Resultado = ", raiz)
+    		}
+        
+        escreva ("\nDigite 1 para continuar calculando")
+        leia (loop)
+		}    
+		
 	}
 		
 		
