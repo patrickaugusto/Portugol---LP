@@ -1,0 +1,30 @@
+programa
+{
+
+  //Função para calcular o volume de um cubo. Esta função deverá receber como parâmetro de entrada o valor do lado do cubo e deverá retornar o volume calculado
+		inclua biblioteca Matematica --> mat
+	funcao inicio()
+	{
+				
+		real a
+		real r
+
+    escreva ("Digite o valor da Arestra: ")
+    leia (a)
+		r = calcula(a)
+		escreva("Resultado = ", r)
+		
+	}
+
+
+	funcao real calcula (real a)
+	{
+		real resultado
+		
+		resultado = a * a * a
+		
+		retorne resultado
+	}
+	
+	
+}
