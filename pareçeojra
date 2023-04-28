@@ -1,0 +1,34 @@
+programa
+{
+
+  //Função para calcular o volume de um paralelepípedo. Esta função deverá receber como parâmetros de entrada os valores da altura, largura e comprimento do paralelepípedo e deverá retornar o volume calculado.
+		inclua biblioteca Matematica --> mat
+	funcao inicio()
+	{
+				
+		real x, y, z
+		real r
+
+    escreva ("Digite o valor da Largura: ")
+    leia (x)
+    escreva ("Digite o valor da Atura: ")
+    leia (y)
+    escreva ("Digite o valor da Comprimento: ")
+    leia (z)
+		r = calcula(x, y, z)
+		escreva("Resultado = ", r)
+		
+	}
+
+
+	funcao real calcula (real a, real b, real c)
+	{
+		real resultado
+		
+		resultado = a * b * c
+		
+		retorne resultado
+	}
+	
+	
+}
