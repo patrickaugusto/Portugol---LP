@@ -1,33 +1,93 @@
-programa
-{
-
-  //Função para calcular o volume de um paralelepípedo. Esta função deverá receber como parâmetros de entrada os valores da altura, largura e comprimento do paralelepípedo e deverá retornar o volume calculado.
-		inclua biblioteca Matematica --> mat
-	funcao inicio()
-	{
-				
-		real x, y, z
-		real r
-
-    escreva ("Digite o valor da Largura: ")
-    leia (x)
-    escreva ("Digite o valor da Atura: ")
-    leia (y)
-    escreva ("Digite o valor da Comprimento: ")
-    leia (z)
-		r = calcula(x, y, z)
-		escreva("Resultado = ", r)
+programa {
+    inclua biblioteca Matematica --> mat
+	funcao inicio() {
+		real a, b, c
+		real cubo, paralel, esfera, cilindro
+		cadeia op
 		
+		escreva ("Cubo \n")
+		escreva ("Paralelepípedo \n")
+		escreva ("Esfera \n")
+		escreva ("Cilindro \n")
+		escreva ("Escolha uma das opções acima: ")
+		leia(op)
+		
+		se (op=="cubo" ou op=="Cubo"){
+            escreva ("Digite o valor da Arestra: ")
+            leia (a)
+		    cubo = vcubo(a)
+		    escreva("Resultado = ", cubo)
+			}
+			
+		se (op=="Paralelepípedo" ou op=="paralelepípedo" ou op=="Paralelepipedo" ou op=="paralelepipedo")	{
+	         escreva ("Digite o valor da Largura: ")
+            leia (a)
+            escreva ("Digite o valor da Altura: ")
+            leia (b)
+            escreva ("Digite o valor da Comprimento: ")
+            leia (c)
+		    paralel = vparalel(a, b, c)
+		    escreva("Resultado = ", paralel)
+		}
+		
+		se (op=="Esfera" ou op=="esfera"){
+		    escreva ("digite o valor do raio: ")
+		    leia (a)
+		    esfera = vesfera(a)
+		    escreva ("Resultado = ", esfera)
+		}
+		
+		//Função para calcular o volume de um cilindro. Esta função deverá receber como parâmetros de entrada os valores da altura e raio da base do cilindro e deverá retornar o volume calculado.
+			se (op=="cilindro" ou op=="Cilindro"){
+			    escreva("Digite o raio do cilindro: ")
+			    leia(a)
+			    escreva("Digite o calor da altura do cilindro: ")
+			    leia(b)
+			    cilindro = vcilindro(a, b)
+			    escreva ("Resultado = ", cilindro)
+			}
+		    
+		    
 	}
-
-
-	funcao real calcula (real a, real b, real c)
+		
+		
+	//Função para calcular o volume de um cubo. 
+	funcao real vcubo (real a) {
+		real v
+		
+		v = a * a * a
+		
+		retorne v
+	}
+	
+	//Função para calcular o volume de um paralelepípedo.
+	funcao real vparalel (real a, real b, real c)
 	{
-		real resultado
+		real v
 		
-		resultado = a * b * c
+		v = a * b * c
 		
-		retorne resultado
+		retorne v
+	}
+	
+	//Função para calcular o volume de uma esfera. 
+	funcao real vesfera (real r){
+	    
+	    real v
+	    
+	    v = (4 * 3.14 * (mat.potencia(r,3))/3)
+	
+	    retorne v
+	}
+	
+	//Função para calcular o volume de um cilindro.
+	funcao real vcilindro (real r, real h){
+	    
+	    real v
+	    
+    	v = (3.14 * (mat.potencia(r,2) * h))
+	
+	    retorne v
 	}
 	
 	
